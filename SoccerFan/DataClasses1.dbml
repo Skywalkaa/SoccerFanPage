@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="football" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\football.mdf;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="footballConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.fans" Member="fans">
+    <Type Name="fan">
+      <Column Name="IdFan" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nom" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="prenom" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.players" Member="players">
+    <Type Name="player">
+      <Column Name="IdPlayers" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nom" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="prenom" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="paye" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="nbrVote" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
